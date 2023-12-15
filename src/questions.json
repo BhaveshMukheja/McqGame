@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "question": "The latesy HTML Standard is",
+      "question": "The latest HTML Standard is",
       "options": ["XML", "HTML 5.0", "SGML", "None of the above"],
       "correctAnswer": "HTML 5.0"
     },
