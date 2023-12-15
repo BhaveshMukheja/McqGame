@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "question": "The latesy HTML Standard is",
+      "options": ["XML", "HTML 5.0", "SGML", "None of the above"],
+      "correctAnswer": "HTML 5.0"
+    },
+    {
+      "id": 2,
+      "question": "'.MOV' extension refers usually to what kind of file?",
+      "options": ["Image File", "Animation/Movie File", "Audio File", "MS Office Document"],
+      "correctAnswer": "Animation/Movie File"
+    },
+    {
+      "id": 3,
+      "question": ".NET framework was deisgned and developed by",
+      "options": ["Microsoft", "IBM", "Oracle", "Google"],
+      "correctAnswer": "Microsoft"
+    },
+    {
+      "id": 4,
+      "question": "Which county did Ravi Shastri play for?",
+      "options": ["Sri Lanka", "Pakistan", "India", "Nepal"],
+      "correctAnswer": "India"
+    },
+    {
+      "id": 5,
+      "question": "Which country won the ICC World Cup 2011?",
+      "options": ["Australia", "England", "New Zeland", "India"],
+      "correctAnswer": "India"
+    }
+  ]
+  
+  

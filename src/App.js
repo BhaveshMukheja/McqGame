@@ -1,24 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+//importing the components and the questions
+
+import Question from "./Components/Question";
+import Score from "./Components/Score";
+import LandingPage from "./Components/LandingPage";
+import questionsData from "./questions.json";
 
 function App() {
+  //using setState to assign a state or change the state of the constant when required
+
+  const [questions, setQuestions] = useState([]);
+  const [score, setScore] = useState(0);
+
+  //using useEffect to fect the question one by one from the json file
+
+  useEffect(() => {
+    setQuestions(questionsData);
+  }, []);
+
+  //setting the score zero on reststarting the quiz
+
+  const restartQuiz = () => {
+    setScore(0);
+  };
+
+  //setting up the routes for different components
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" exact element={<LandingPage />} />
+
+          {/* passing props in the component */}
+          <Route
+            path="/quiz"
+            exact
+            element={
+              <Question
+                questions={questions}
+                score={score}
+                setScore={setScore}
+              />
+            }
+          />
+
+          <Route
+            path="/score"
+            element={
+              <Score
+                score={score}
+                totalQuestions={questions.length}
+                restartQuiz={restartQuiz}
+              />
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
