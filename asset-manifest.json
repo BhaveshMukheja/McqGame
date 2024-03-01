@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/McqGame/static/css/main.3ae41c16.css",
+    "main.js": "/McqGame/static/js/main.2029772c.js",
+    "static/js/787.4ace7c7e.chunk.js": "/McqGame/static/js/787.4ace7c7e.chunk.js",
+    "index.html": "/McqGame/index.html",
+    "main.3ae41c16.css.map": "/McqGame/static/css/main.3ae41c16.css.map",
+    "main.2029772c.js.map": "/McqGame/static/js/main.2029772c.js.map",
+    "787.4ace7c7e.chunk.js.map": "/McqGame/static/js/787.4ace7c7e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ae41c16.css",
+    "static/js/main.2029772c.js"
+  ]
+}
