@@ -32,7 +32,7 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/" exact element={<LandingPage />} />
+          <Route path="/McqGame" exact element={<LandingPage />} />
 
           {/* passing props in the component */}
           <Route

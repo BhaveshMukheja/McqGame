@@ -31,7 +31,7 @@ function Score({ score, totalQuestions, restartQuiz }) {
               Restart Quiz
             </button>
           </Link>
-          <Link to="/">
+          <Link to="/McqGame">
             <button
               onClick={restartQuiz} //on clicking it sets the scroe to 0 again and retirect to the first question
               type="button"
